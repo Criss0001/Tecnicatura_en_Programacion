@@ -2,7 +2,9 @@
 
 ### Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 
-`pwd`
+```
+pwd
+```
 > Vemos la ruta de la carpeta en la que estamos
 
 cd 
