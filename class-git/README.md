@@ -68,7 +68,7 @@ mkdir Java
 mkdir JavaScript
 Revisar y ejecutar cada comando, hacerlo como practica
 
-# CLASE 2 MIÉRCOLES
+# CLASE 2
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
 
@@ -195,7 +195,7 @@ cd ..
 
 Revisar y ejecutar cada comando, hacerlo como practica
 
-# CLASE 4 Analizar cambios en los archivos de tu proyecto Git parte 4
+# CLASE 4
 
 Ingresamos de la siguiente manera:
 
@@ -211,7 +211,8 @@ ls # Listamos todos los archivos y carpetas
 
 touch historia.txt #Crea un archivo vacío
 
-code . #Abre el editor de codigo
+code . 
+<sub>Abre el editor de codigo
 
 #Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Ariel (coloca tu nombre)
 
