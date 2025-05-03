@@ -1,4 +1,4 @@
-#CLASE 1
+# CLASE 1
 
 Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 
@@ -68,7 +68,7 @@ mkdir Java
 mkdir JavaScript
 Revisar y ejecutar cada comando, hacerlo como practica
 
-#CLASE 2 MIÉRCOLES
+# CLASE 2 MIÉRCOLES
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
 
@@ -139,7 +139,7 @@ git commit -m "Mi segundo commit"
 git log historia.txt #Vemos toda la historia de este archivo, el número largo es el hash del commit
 Revisar y ejecutar cada comando, hacerlo como practica
 
-#CLASE 3
+# CLASE 3
 
 Analizar cambios en los archivos de tu proyecto Git parte 3
 
@@ -195,7 +195,7 @@ cd ..
 
 Revisar y ejecutar cada comando, hacerlo como practica
 
-#CLASE 4 Analizar cambios en los archivos de tu proyecto Git parte 4
+# CLASE 4 Analizar cambios en los archivos de tu proyecto Git parte 4
 
 Ingresamos de la siguiente manera:
 
