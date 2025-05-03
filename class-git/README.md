@@ -66,6 +66,7 @@ mkdir Python
 mkdir Java
 
 mkdir JavaScript
+
 Revisar y ejecutar cada comando, hacerlo como practica
 
 # CLASE 2
@@ -97,7 +98,7 @@ rm vacio.txt
 
 rm --help 
 > Muestra como funciona el comando
-> 
+
 ## CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
 cd tecnicatura
 
@@ -153,136 +154,174 @@ git add .
 git commit -m "Mensaje importante del commit" 
 > El primer commit esta hecho
 
-code . #Hacemos cambios en el archivo y guardamos
+code . 
+> Hacemos cambios en el archivo y guardamos
 
-git status #Hay cambios para commitear
+git status 
+> Hay cambios para commitear
 
 git add .
 
 git commit -m "Mi segundo commit"
 
-git log historia.txt #Vemos toda la historia de este archivo, el número largo es el hash del commit
+git log historia.txt 
+> Vemos toda la historia de este archivo, el número largo es el hash del commit
 Revisar y ejecutar cada comando, hacerlo como practica
 
 # CLASE 3
 
-Analizar cambios en los archivos de tu proyecto Git parte 3
+## Analizar cambios en los archivos de tu proyecto Git parte 3
 
-Ingresamos de la siguiente manera:
+### Ingresamos de la siguiente manera:
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+### Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
-cd tecnicaturagit #Ingresamos al directorio donde están nuestras carpetas de trabajo
+cd tecnicaturagit 
+> Ingresamos al directorio donde están nuestras carpetas de trabajo
 
-ls #Vemos los archivos y directorios que ya tenemos
+ls 
+> Vemos los archivos y directorios que ya tenemos
 
-cd git #No hay nada
+cd git 
+> No hay nada
 
-cd .. #Salimos
+cd .. 
+> Salimos
 
-rm historia.txt #Eliminamos el archivo que habíamos hecho, esto en git bash (window) esto es para practica
+rm historia.txt 
+> Eliminamos el archivo que habíamos hecho, esto en git bash (window) esto es para practica
 
-rm Git #rm: cannot remove 'Git': Is a directory
+rm Git 
+> rm: cannot remove 'Git': Is a directory
 
-rm --recursive -R Git #By default, rm does not remove directories.  Use the --recursive (-r or -R) arguments
+rm --recursive -R Git 
+> By default, rm does not remove directories.  Use the --recursive (-r or -R) arguments
 
-option to remove each listed directory, too, along with all of its contents. #Esto es para practica
+option to remove each listed directory, too, along with all of its contents. 
+> Esto es para practica
 
-rm --help #Nos muestra lo que les puse arriba como documentación en Inglés.
+rm --help 
+> Nos muestra lo que les puse arriba como documentación en Inglés.
 
-mkdir class-git #Creamos la carpeta o directorio para trabajar en Git local por ahora.
+mkdir class-git 
+> Creamos la carpeta o directorio para trabajar en Git local por ahora.
 
-cd class-git #Entramos para crear el README.md para este sector.
+cd class-git 
+> Entramos para crear el README.md para este sector.
 
-touch README.md #Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
-Enlace a la documentación en GitHub de MARKDOWN
+touch README.md 
+> Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
 
-Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+### Enlace a la documentación en GitHub de MARKDOWN
 
-code . #Abrimos VSC para editar el archivo.
+### Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+
+code . 
+> Abrimos VSC para editar el archivo.
 Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
 
-git status
+'git status'
 
-git add .
+'git add .'
 
-git status
+'git status'
 
-git commit -m "Cargamos el README dentro del directorio class-git"
+'git commit -m "Cargamos el README dentro del directorio class-git"'
 
-git status
+'git status'
 
-git log #Para ver los dos commits hechos: Si tienes commiteada alguna clase anterior veras mas commits de los que yo tengo.
+'git log' 
+> Para ver los dos commits hechos: Si tienes commiteada alguna clase anterior veras mas commits de los que yo tengo.
 
-cd ..
+'cd ..'
 
-cd ..
+'cd ..'
 
 Revisar y ejecutar cada comando, hacerlo como practica
 
 # CLASE 4
 
-Ingresamos de la siguiente manera:
+### Ingresamos de la siguiente manera:
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+### Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
 cd tecnicatura
 
-cd class-git #Nos metemos hasta la carpeta class-git
+cd class-git 
+> Nos metemos hasta la carpeta class-git
 
-ls # Listamos todos los archivos y carpetas
+ls 
+>Listamos todos los archivos y carpetas
 
-touch historia.txt #Crea un archivo vacío
+touch historia.txt 
+>Crea un archivo vacío
 
 code . 
-<sub>Abre el editor de codigo
+> Abre el editor de codigo
 
-#Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Ariel (coloca tu nombre)
+> Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Cristian (coloca tu nombre)
 
-ctrl + s #Guardamos los cambios
+ctrl + s 
+> Guardamos los cambios
 
-git status #Vemos el estado actual
+git status 
+> Vemos el estado actual
 
-git add . #Agrega el archivo modificado
+git add . 
+> Agrega el archivo modificado
 
-git status #Vemos el estado actual
+git status 
+> Vemos el estado actual
 
-git commit #Sin agregar -m veremos que pasa
+git commit 
+> Sin agregar -m veremos que pasa
 
+> Agregar mensaje y salir con
 
-#Agregar mensaje y salir con
+Esc 
+> Presionamos Escape 
 
-Esc #Presionamos Escape 
+:wq! + enter 
+> Y ya salimos si estamos en git bash con window
 
-:wq! + enter #Y ya salimos si estamos en git bash con window
+Esc + shift + z + z 
+> Salimos del mensaje para el commit, en linux, esto anda en algunas terminales
 
-Esc + shift + z + z #Salimos del mensaje para el commit, en linux, esto anda en algunas terminales
+> Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
 
-#Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
+ctrl + s 
+> Guard #Agrega el archivo modificado
 
-ctrl + s #Guard #Agrega el archivo modificado
+git commit 
+> Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
 
-git commit #Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
+Esc + i 
+> Para comenzar a escribir mensaje del commit, no suele ser necesario
 
-Esc + i #Para comenzar a escribir mensaje del commit, no suele ser necesario
+ctrl + x 
+> Para salir en linux
 
-ctrl + x #Para salir en linux
+s + enter 
+> Para decir si al cambio y aceptar el nombre, ósea no cambiamos el nombre, la (s) es de si y la (y) es de yes, no olvidar enter en linux
 
-s + enter #Para decir si al cambio y aceptar el nombre, ósea no cambiamos el nombre, la (s) es de si y la (y) es de yes, no olvidar enter en linux
+git show 
+> Vemos todos los cambios en el último commit
 
-git show #Vemos todos los cambios en el último commit
+git log historia.txt 
+> Vemos todos los commit
 
-git log historia.txt #Vemos todos los commit
+q 
+> Para salir del registro de commits
 
-q #Para salir del registro de commits
+> Copiamos un hash mas antiguo y otro reciente, ingresamos el siguiente comando
 
-#Copiamos un hash mas antiguo y otro reciente, ingresamos el siguiente comando
+git diff hash_commit_numerico hash_commit_numerico 
+> Comparamos diferentes commits y sus cambios, poner la versión mas vieja primero, luego la mas nueva
 
-git diff hash_commit_numerico hash_commit_numerico #Comparamos diferentes commits y sus cambios, poner la versión mas vieja primero, luego la mas nueva
-
-q #Para salir
+q 
+> Para salir
 
 cd ..
 
