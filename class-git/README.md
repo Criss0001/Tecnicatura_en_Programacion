@@ -1,6 +1,6 @@
 # CLASE 1
 
-## Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
+### Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 
 pwd  
 > Vemos la ruta de la carpeta en la que estamos
@@ -20,7 +20,8 @@ ls
 ls -al
 > El espacio -al significa que es un argumento especial para ver archivos ocultos
 
-Usar la flecha hacía arriba nos muestra el último comando utilizado
+↓
+> Usar la flecha hacía arriba nos muestra el último comando utilizado
 
 ls -l 
 > Muestra casi todos los archivos sin los que están ocultos
@@ -46,7 +47,7 @@ df -h
 cd /mnt/d
 > Cambia de directorio usando WSL Ubuntu en window
 
-## AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
+### AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
 cd ..
 
 cd ..
@@ -71,9 +72,10 @@ Revisar y ejecutar cada comando, hacerlo como practica
 
 # CLASE 2
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
+### Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
 
-touch vacio.txt #Crea un archivo con su extención: ESCRIBIR DENTRO
+touch vacio.txt 
+> Crea un archivo con su extención: ESCRIBIR DENTRO
 
 ctrl + s 
 > Guardamos lo que escribimos en el archivo
@@ -292,7 +294,7 @@ Esc + shift + z + z
 > Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
 
 ctrl + s 
-> Guard #Agrega el archivo modificado
+> Guard Agrega el archivo modificado
 
 git commit 
 > Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
