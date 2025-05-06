@@ -152,10 +152,27 @@
 
 # Ejercicio 2:
 
-edadAdulto = 18
-edadPersona = int(input('Digite su edad: '))
+# edadAdulto = 18
+# edadPersona = int(input('Digite su edad: '))
 
-if edadPersona >= edadAdulto:
-    print(f"Su edad es: {edadPersona} años, usted es mayor de edad")
-else:
-    print(f"Su edad es: {edadPersona} años, usted es menor de edad")
+# if edadPersona >= edadAdulto:
+#     print(f"Su edad es: {edadPersona} años, usted es mayor de edad")
+# else:
+#     print(f"Su edad es: {edadPersona} años, usted es menor de edad")
+
+# Operadores Lógicos
+
+a = False
+b = False
+resultado = a and b
+print(resultado)
+
+# Operador or
+resultado = a or b
+print(resultado)
+
+# Operador not
+resultado = not a
+print(resultado)
+
+#Hicimos ejercicios 1,2,3,4,5,6,7,8,9,10
