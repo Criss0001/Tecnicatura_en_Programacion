@@ -1,52 +1,87 @@
-#CLASE 1
+# CLASE 1
 
-Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
+### Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 
+```sh
 pwd  
-Vemos la ruta de la carpeta en la que estamos
+```
+> Vemos la ruta de la carpeta en la que estamos
 
+```sh
 cd 
-Es para navegar a una carpeta: change directory -> cambiar de directorio
+```
+> Es para navegar a una carpeta: change directory -> cambiar de directorio
 
+```sh
 cd / 
-Nos lleva al home, en la raíz del disco
+```
+>Nos lleva al home, en la raíz del disco
 
+```sh
 cd ~ 
-La virgulilla significa que estamos en el lugar de los documentos o del usuario
+```
+> La virgulilla significa que estamos en el lugar de los documentos o del usuario
 
+```sh
 ls 
-Esto es listar los archivos, nos muestra todos los archivos en la raíz
+```
+>Esto es listar los archivos, nos muestra todos los archivos en la raíz
 
+```sh
 ls -al
-El espacio -al significa que es un argumento especial para ver archivos ocultos
+``` 
+>El espacio -al significa que es un argumento especial para ver archivos ocultos
 
-Usar la flecha hacía arriba nos muestra el último comando utilizado
+```sh
+↑
+```
+>Usar la flecha hacía arriba nos muestra el último comando utilizado
 
+```sh
 ls -l 
-Muestra casi todos los archivos sin los que están ocultos
+```
+> Muestra casi todos los archivos sin los que están ocultos
 
+```sh
 ls -a 
-Muestra el grupo de archivos pero no en una lista
+```
+>Muestra el grupo de archivos pero no en una lista
 
+```sh
 clear 
-Limpia la consola o ctrl + l
+```
+>Limpia la consola o ctrl + l
 
+```sh
 cd .. 
-Nos devuelve a la carpeta anterior
+```
+>Nos devuelve a la carpeta anterior
 
+```sh
 cd U + tab 
-Esto se usa para un autocompletado o para buscar una referencia
+```
+>Esto se usa para un autocompletado o para buscar una referencia
 
+```sh
 cd /D 
-Cambiamos de disco en window
+```
+>Cambiamos de disco en window
 
+```sh
 df -h 
-Muestra todos los directorios en Ubuntu
+```
+>Muestra todos los directorios en Ubuntu
 
+```sh
 cd /mnt/d
-Cambia de directorio usando WSL Ubuntu en window
+```
+>Cambia de directorio usando WSL Ubuntu en window
 
-AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
+
+## AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
+
+
+```sh
 cd ..
 
 cd ..
@@ -54,11 +89,15 @@ cd ..
 cd /mnt/c
 
 cd ~ 
-Vamos a la raíz
+```
+>Vamos a la raíz
 
+```sh
 mkdir Tecnicatura 
-Recordar que en window las mayúsculas no tienen relevancia, pero si en Linux
+```
+>Recordar que en window las mayúsculas no tienen relevancia, pero si en Linux
 
+```sh
 cd tecnicatura
 
 mkdir Python
@@ -66,12 +105,14 @@ mkdir Python
 mkdir Java
 
 mkdir JavaScript
-Revisar y ejecutar cada comando, hacerlo como practica
+```
 
-#CLASE 2 MIÉRCOLES
+>Revisar y ejecutar cada comando, hacerlo como practica
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
+# CLASE 2 MIÉRCOLES
 
+### Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
+```sh
 touch vacio.txt #Crea un archivo con su extención: ESCRIBIR DENTRO
 
 ctrl + s #Guardamos lo que escribimos en el archivo
@@ -89,7 +130,11 @@ history #Veremos la historia completa de los comandos que hemos utilizado
 rm vacio.txt #Borra el archivo seleccionado, ¡¡¡¡CUIDADO!!!!
 
 rm --help #Muestra como funciona el comando
-CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
+```
+
+## CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
+
+```sh
 cd tecnicatura
 
 mkdir class-git
@@ -137,16 +182,18 @@ git add .
 git commit -m "Mi segundo commit"
 
 git log historia.txt #Vemos toda la historia de este archivo, el número largo es el hash del commit
-Revisar y ejecutar cada comando, hacerlo como practica
+```
+>Revisar y ejecutar cada comando, hacerlo como practica
 
-#CLASE 3
+# CLASE 3
 
-Analizar cambios en los archivos de tu proyecto Git parte 3
+## Analizar cambios en los archivos de tu proyecto Git parte 3
 
-Ingresamos de la siguiente manera:
+### Ingresamos de la siguiente manera:
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+### Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
+```sh
 cd tecnicaturagit #Ingresamos al directorio donde están nuestras carpetas de trabajo
 
 ls #Vemos los archivos y directorios que ya tenemos
@@ -170,13 +217,17 @@ mkdir class-git #Creamos la carpeta o directorio para trabajar en Git local por 
 cd class-git #Entramos para crear el README.md para este sector.
 
 touch README.md #Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
-Enlace a la documentación en GitHub de MARKDOWN
+```
 
-Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+>Enlace a la documentación en GitHub de [MARKDOWN](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+>Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+
+```sh
 code . #Abrimos VSC para editar el archivo.
-Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
-
+```
+>Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
+```sh
 git status
 
 git add .
@@ -192,17 +243,18 @@ git log #Para ver los dos commits hechos: Si tienes commiteada alguna clase ante
 cd ..
 
 cd ..
+```
+>Revisar y ejecutar cada comando, hacerlo como practica
 
-Revisar y ejecutar cada comando, hacerlo como practica
+# CLASE 4 
+### Analizar cambios en los archivos de tu proyecto Git parte 4
 
-#CLASE 4 Analizar cambios en los archivos de tu proyecto Git parte 4
+### Ingresamos de la siguiente manera:
 
-Ingresamos de la siguiente manera:
+### Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
-Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
-
-TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
-
+### TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+```sh
 cd tecnicatura
 
 cd class-git #Nos metemos hasta la carpeta class-git
@@ -213,7 +265,7 @@ touch historia.txt #Crea un archivo vacío
 
 code . #Abre el editor de codigo
 
-#Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Ariel (coloca tu nombre)
+#Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Cristian (coloca tu nombre)
 
 ctrl + s #Guardamos los cambios
 
@@ -261,6 +313,8 @@ q #Para salir
 cd ..
 
 cd ..
+```
+
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
-Revisar y ejecutar cada comando, hacerlo como practica
+>Revisar y ejecutar cada comando, hacerlo como practica
