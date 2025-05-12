@@ -77,7 +77,7 @@ public class HolaMundo {
         System.out.println("Valor máximo del Long: "+Long.MAX_VALUE);
         */
         
-        float numFloat = (float)3.4028235E38F; //Indica que es Float con F al final
+        /*float numFloat = (float)3.4028235E38F; //Indica que es Float con F al final
         System.out.println("numFloat = " + numFloat);
         System.out.println("Valor minimo de Float: "+ Float.MIN_VALUE);
         System.out.println("Valor máximo de Float: " + Float.MAX_VALUE);
@@ -86,8 +86,39 @@ public class HolaMundo {
         System.out.println("numDouble = " + numDouble);
         System.out.println("Valor minimo de Double: "+ Double.MIN_VALUE);
         System.out.println("Valor máximo de Double: "+ Double.MAX_VALUE);
+        */
         
+        /*//Inferencia de tipos de var y tipos primitivos
+        var numEntero = 20; //Las literales sin punto automaticamente son de tipo int
+        System.out.println("numEntero = " + numEntero);
+        var numFloat = 10.0; //Automaticamente con el punto se transforma en tipo doble
+        System.out.println("numFloat = " + numFloat);
+        var numDouble = 10.0;
+        System.out.println("numFloat = " + numFloat);*/
+        
+        //Tipos primitivos char
+        char miVariableChar = 'a';
+        System.out.println("miVariableChar = " + miVariableChar);
+        
+        char varCaracter = '\u0024'; //Indicamos a Java la asignación con el código unicode
+        System.out.println("varCaracter = " + varCaracter);
+        char varCaracterDecimal = 36; //Valor decimal del juego de caracteres unicode
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal);
+        char varCaracterSimbol = '$'; //Un caracter especial, podemos copiar y pegar desde uncode
+        System.out.println("varCaracterSimbol = " + varCaracterSimbol);
+        
+        var varCaracter1 = '\u0024'; //Indicamos a Java la asignación con el código unicode
+        System.out.println("varCaracter1 = " + varCaracter1);
+        var varCaracterDecimal1 = (char)36; //Valor Entero y le asigna un tipo int
+        System.out.println("varCaracterDecimal1 = " + varCaracterDecimal1);
+        var varCaracterSimbol1 = '$'; //Un caracter especial, podemos copiar y pegar desde uncode
+        System.out.println("varCaracterSimbol1 = " + varCaracterSimbol1);
 
+        int varEnteroChar = '$';
+        System.out.println("varEnteroChar = " + varEnteroChar);
+        int caracterChar = 'f';
+        System.out.println("caracterChar = " + caracterChar);
+    
     }
 
 }
