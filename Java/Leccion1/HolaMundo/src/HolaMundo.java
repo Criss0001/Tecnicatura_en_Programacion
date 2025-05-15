@@ -163,13 +163,9 @@ public class HolaMundo {
 //        fraseChar = entrada.nextLine().charAt(0);
 //        System.out.println("fraseChar = " + fraseChar);
         
-        
 
 
-        
-        
-        
-        
+   
     }
 
 }
