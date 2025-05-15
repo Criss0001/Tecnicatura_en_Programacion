@@ -329,7 +329,8 @@ Tienes una carpeta donde están los archivos de tu proyecto o un directorio y al
 Entonces tenemos el área de trabajo, cuando colocamos git add historia.txt pasamos al staging o área de preparación, que hay que recordar que esto es en la memoria ram y luego con git commit -m "Mensaje" pasa al repositorio en la rama master, allí se genera un nombre llenos de letras y números, es el hash, el nombre del commit.
 
 
-<img src="gitflow.png" alt="imagen gitflow">
+![image](https://github.com/user-attachments/assets/ba7cd7ef-b0d4-4453-a4c8-5ac9730e8f66)
+
 
 ### ¿Qué es Gitflow? Gitflow es un modelo alternativo de creación de ramas en Git en el que se utilizan ramas de función y varias ramas principales. Fue Vincent Driessen en nvie quien lo publicó por primera vez y quien lo popularizó.
 
@@ -366,6 +367,7 @@ Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hace
 
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
+```sh
 cd tecnicatura
 
 cd class-git
@@ -475,7 +477,9 @@ git branch -D cambios
 cd ..
 
 cd ..
+```
 
->La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+
 >Revisar y ejecutar cada comando, hacerlo como practica
 >Profesor Ariel Betancud
