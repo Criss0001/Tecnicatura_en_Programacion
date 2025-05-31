@@ -33,6 +33,20 @@ Secuencias de Escape
 
 Operador de Aumento
 ++
+Ejemplo: let z == ++a; //PreIncremento
+Ejemplo: z == a++; //PosIncremento
 
 Operador de Decremento
 --
+Ejemplo: Let z = --a; //PreDecremento
+Ejemplo: z = a--; //PosDecremento
+
+Operador Distinto, Diferente(Boolean)
+<
+>
+<=
+>=
+
+Operadores Lógicos
+And -> && Doble Aspersan
+Or  -> 
