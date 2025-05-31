@@ -13,3 +13,10 @@ console.log(juntos);
 
 nombre += apellido; //Tercera Concatenación usando el operador simplificado
 console.log(nombre);
+
+//Hoy no utilizamos var, sino se utiliza let y const
+let nombre2 = "Pedro";
+console.log(nombre2);
+
+const apellido2 = "Lepes";
+console.log(apellido2);
