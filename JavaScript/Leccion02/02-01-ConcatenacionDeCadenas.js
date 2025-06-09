@@ -19,4 +19,5 @@ let nombre2 = "Pedro";
 console.log(nombre2);
 
 const apellido2 = "Lepes";
+//apellido 
 console.log(apellido2);
