@@ -1,51 +1,36 @@
-//Ampliando el uso de var let y const
-/*
-Con var podes resingnar en cualquier momento
-este forma parte del ambito global
-Un error es que se sobreescriba su scot
-*/
-
-var nombre = 'Cristian';
-nombre = 'Jesús';
-console.log(nombre);
-
-function saludar() {
-    var nombre = 'Natalia';
-    console.log(nombre);
+//Ejercicio 1: Calcular estación del año
+let mes =  5;
+let estacion;
+if (mes === 12 || mes === 1 || mes === 2) {
+    estacion = "Verano";
 }
-console.log(nombre);
-
-if(true){
-    var edad = 34;
-    console.log(edad);
+else if (mes === 3 || mes === 4 || mes === 5) {
+    estacion = "Otoño";
 }
-console.log(edad); //En la función funciono correctamente, en la estrucura if falló
-
-/*
-let: ésta puede ser reasignada en cualqueir momento
-la diferencia es que su ambito es de bloque,
-solo disponible dentro de un bloque de lalves
-o dentro de una función
-*/
-
-function saludar2(){
-    let nombre2 = 'Cristian';
-    console.log(nombre2);
+else if (mes === 6 || mes === 7 || mes === 8) {
+    estacion = "Invierno";
 }
-console.log(nombre2);
-
-if(true){
-    let edad2 = 34;
-    console.log(edad);
+else if (mes === 9 || mes === 10 || mes === 11) {
+    estacion = "Primavera";
 }
-console.log(edad2); //En la función funcionó correctamente, en la estructura if falló
+else{
+    estacion = "Ingrese un mes válido";
+}
+console.log("El valor corresponde a la estación de: " + estacion);
 
-
-/*
-const se utiliza para valores constantes que no pueden ser registradas
-*/
-
-const fechaNacimiento = 2006;
-console.log(fechaNacimiento);
-//fechaNacimiento = 2003;
-//console.log(fechaNacimiento); //Solo se ejecuta el console anterior
+//Ejercicio 2: Hora del día
+let hora = 15;
+let mensaje;
+if (hora >= 6 && hora < 12) {
+    mensaje = "Buenos días";
+}
+else if (hora >= 12 && hora < 20) {
+    mensaje = "Buenas tardes";
+}
+else if (hora >= 20 && hora < 24) {
+    mensaje = "Buenas noches";
+}
+else{
+    mensaje = "El valor ingresado no es una hora válida";
+}
+console.log(mensaje);
