@@ -359,15 +359,15 @@ Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo 
 >Profesor Ariel Betancud
 
 # CLASE 6 MIÉRCOLES 14 DE MAYO DEL 2025
-Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
+## Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
 
+```sh
 Ingresamos de la siguiente manera:
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
-```sh
 cd tecnicatura
 
 cd class-git
@@ -479,16 +479,16 @@ cd ..
 cd ..
 ```
 
-La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
-
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 >Revisar y ejecutar cada comando, hacerlo como practica
 >Profesor Ariel Betancud
 
 
-#CLASE 7 MIÉRCOLES 21 DE MAYO DEL 2025 - Portafolio 1
-Git reset vs. Git rm parte 7
-Los comandos git reset y git rm tienen utilidades muy diferentes, pero pueden confundirse fácilmente.
+# CLASE 7 MIÉRCOLES 21 DE MAYO DEL 2025 - Portafolio 1
+## Git reset vs. Git rm parte 7
 ```sh
+Los comandos git reset y git rm tienen utilidades muy diferentes, pero pueden confundirse fácilmente.
+
 GIT RESET
 
 El comando git reset es una herramienta poderosa que te permite deshacer o revertir cambios en tu repositorio de Git. Lo puedes ejecutar de tres maneras diferentes, con las líneas de commando --soft, --mixed y --hard.
@@ -571,11 +571,9 @@ Siguientes pasos Bueno, todos los cambios están en el área de Staging, incluid
 Crear cambios en el archivo creado, donde vamos a hacer varios commits, para ir probando los nuevos comandos, al finalizar las pruebas, eliminar el directorio con todo su contenido.
 ```
 
-La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
-
-Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
-
-Dante Nicolás Martinez
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
 >Introducción
 >Práctica
 >PDF
@@ -583,8 +581,8 @@ Dante Nicolás Martinez
 >Revisar y ejecutar cada comando, hacerlo como practica
 >Profesor Ariel Betancud
 
-#CLASE 8 MIÉRCOLES 28 DE MAYO DEL 2025 - Portafolio 2
-Flujo de trabajo básico con un repositorio remoto parte 8
+# CLASE 8 MIÉRCOLES 28 DE MAYO DEL 2025 - Portafolio 2
+## Flujo de trabajo básico con un repositorio remoto parte 8
 
 ```sh
 Cuando empiezas a trabajar en un entorno local, el proyecto vive únicamente en tu computadora. Esto significa que no hay forma de que otros miembros del equipo trabajen en él.
@@ -649,8 +647,8 @@ git log > log.txt #guardar los logs en un archivo txt
 >Parte 2:
 
 
-#CLASE 9-A MIÉRCOLES 4 DE JUNIO DEL 2025 - Portafolio 3
-Introducción a las ramas o branches de Git parte 9
+# CLASE 9-A MIÉRCOLES 4 DE JUNIO DEL 2025 - Portafolio 3
+## Introducción a las ramas o branches de Git parte 9
 
 ```sh
 
@@ -806,8 +804,8 @@ git checkout segunda #Volvemos a ver todos los cambios que hicimos de nuevo
 >Profesor Ariel Betancud
 
 
-CLASE 10-A MIÉRCOLES 11 DE JUNIO DEL 2025 - Portafolio 5
-Resolución de conflictos al hacer merge
+# CLASE 10-A MIÉRCOLES 11 DE JUNIO DEL 2025 - Portafolio 5
+## Resolución de conflictos al hacer merge
 
 ```sh
 Sección lectura
@@ -952,8 +950,8 @@ PDF
 >Profesor Ariel Betancud
 
 
-#CLASE 10-B MIÉRCOLES 11 DE JUNIO DEL 2025 - Portafolio 6
-Cómo funcionan las llaves públicas y privadas
+# CLASE 10-B MIÉRCOLES 11 DE JUNIO DEL 2025 - Portafolio 6
+## Cómo funcionan las llaves públicas y privadas
 
 ```sh
 Sección lectura
