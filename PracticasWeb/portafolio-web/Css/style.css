@@ -1,3 +1,10 @@
+/*Definiendo variables de color en css*/
+:root {
+  --body-bg-color: rgb(43,43,70);
+  --text-color: white;
+  --colorh1-color: rgb(214, 214, 214);
+}
+
 .navigation {
   display: flex;
   gap: 3rem;
@@ -8,11 +15,21 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-body{
+body {
+  background: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  color: var(--colorh1-color);
+}
+
+/*body{
   background: rgba(55, 204, 197, 0.589);
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}*/
 
 /*titulo del header*/
 .titulo{
@@ -63,6 +80,28 @@ a{
   line-height: 2.5rem;
   font-size: large;
   color: azure;
+  gap: 5rem;
+  align-items: center;
+}
+
+.img-perfil {
+  border-radius: 50%;
+}
+
+.experiencia, .estudios{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: azure;
+}
+
+.container-experiencia, .container-estudios{
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+  line-height: 2.5rem;
+  font-size: large;
+  margin: 8rem;
 }
 
 /* Media Queries agrupadas */
@@ -82,5 +121,46 @@ a{
     margin-top: 1rem; /* margen a lo alto */
     line-height: 2.5rem; /* espacio entre los parrafos del texto */
     font-size: small; /* tamaño de la fuente */
+    flex-direction: column;
   }
+  .contenedor-experiencia, .container-estudios {
+    width: 100%;
+    margin: 0rem;
+  }
+  .experiencia, .estudios {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem; /* margen a lo alto */
+    font-size: small;
+  }
+
+  /* Tabets (Pantallas medianas, de 768px a 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .titulo {
+      justify-content: center;
+    }
+    .navigation {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .experiencia, .estudios {
+      width: 75%;
+    }
+
+    /* Escritorio (Pantallas grandes, a partir de 1024px) */
+  @media (min-width: 1024px) {
+    .titulo {
+      justify-content: flex-start;
+    }
+    .navigation {
+      gap: 3rem;
+      justify-content: flex-end;
+      margin: 0 3rem;
+    }
+    /* Agregando el responsivo de las secciones experiencia y estudios */
+    .experiencia, .estudios {
+      width: 75%;
+    }
+  }
+}
 }
