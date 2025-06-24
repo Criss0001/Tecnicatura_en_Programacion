@@ -810,6 +810,8 @@ La fusión en Git es la forma en que este sistema une un historial bifurcado. El
 
 Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
 
+![image](https://github.com/user-attachments/assets/a638ea41-18f0-4fe8-adf6-b2299332401b)
+
 
 Funcionamiento de Git merge
 
