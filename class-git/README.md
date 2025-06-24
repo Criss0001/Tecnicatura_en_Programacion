@@ -803,13 +803,14 @@ git checkout segunda #Volvemos a ver todos los cambios que hicimos de nuevo
 >Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación, todo lo vamos a >recibir en el formulario que pronto estará disponible para completar y enviar todo el trabajo terminado.
 >Profesor Ariel Betancud
 
-#CLASE 9-B MIÉRCOLES 4 DE JUNIO DEL 2025 - Portafolio 4
-Fusión de ramas con Git merge parte 10
+# CLASE 9-B MIÉRCOLES 4 DE JUNIO DEL 2025 - Portafolio 4
+## Fusión de ramas con Git merge parte 10
 ```sh
 La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
 
 Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
 
+![image](https://campus.frsr.utn.edu.ar/moodle/pluginfile.php/119146/mod_page/content/2/git-merge-final-7422eace-18ce-4fb2-8eb2-11275fde2f41.jpg)
 
 Funcionamiento de Git merge
 
