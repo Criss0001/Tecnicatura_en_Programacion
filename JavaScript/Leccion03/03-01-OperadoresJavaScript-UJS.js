@@ -96,7 +96,7 @@ function saludar2(){
     let nombre2 = 'Cristian';
     console.log(nombre2);
 }
-console.log(nombre2);
+// console.log(nombre2); No esta definido
 
 if(true){
     let edad4 = 34;

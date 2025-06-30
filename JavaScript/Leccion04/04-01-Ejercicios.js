@@ -10,7 +10,8 @@ else if (mes === 3 || mes === 4 || mes === 5) {
 else if (mes === 6 || mes === 7 || mes === 8) {
     estacion = "Invierno";
 }
-else if (mes === 9 || mes === 10 || mes === 11) {
+else if (mes === 9 ||
+     mes === 10 || mes === 11) {
     estacion = "Primavera";
 }
 else{
