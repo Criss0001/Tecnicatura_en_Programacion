@@ -1,10 +1,14 @@
 class Persona: #  Creamos una clase
-    def __init__(self, nombre, apellido, edad): # Se lo llama método Init Dunder
+
+    def __init__(self, nombre, apellido, dni, edad, *args, **kwargs): # Se lo llama método Init Dunder
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
+        self.args = args
+        self.wkargs = kwargs
+
     def mostrar_detalle(self): # self es igual a this
-        print(f'Persona: {self.nombre} {self.apellido} {self.edad}')
+        print(f'La clase Persona tiene los siguientes datos: {self.nombre} {self.apellido} {self.edad}, la direccion es: {self.args} los datos importantes son: {self.wkargs}')
 
 persona1 = Persona('Ariel', 'Betancud', 36)
 print(persona1.nombre)
@@ -31,3 +35,5 @@ persona1.telefono = '2604458596'
 print(f'Este es el telefono de: {persona1.nombre}{persona1.telefono}') # Hemos creado un atributo de un objeto
 
 # print(persona2.telefono) el objeto persona2 no tiene este atributo, da error
+persona3 = Persona('Rogelio', 'Romero', 22, 'Teléfono', '2615845874', 'Calle Lopez', 823, 'Manzana', 77, 'Casa', 18, Altura=1.83, Peso=105, CFavorito='Azul', Auto='Fiat', Modelo=1960)
+persona3.mostrar_detalle()
