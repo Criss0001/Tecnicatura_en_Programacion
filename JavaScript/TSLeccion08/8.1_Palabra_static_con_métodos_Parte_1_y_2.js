@@ -12,7 +12,7 @@ class Persona {
         this._nombre = nombre;
     }
 
-     get apellido() {
+    get apellido() {
         return this._apellido;
     }
 
@@ -22,6 +22,14 @@ class Persona {
 
     nombreCompleto(){
         return this._nombre+' '+this._apellido
+    }
+
+    static saludar(){
+        console.log('Saludos desde método static');
+    }
+
+    static saludar2(){
+        console.log(persona.nombre+' '+persona.apellido);
     }
 }
 
@@ -41,13 +49,21 @@ class Empleado extends Persona{ //Clase hija
 
     //Sobreescritura
     nombreCompleto(){
-        return super.nombreCompleto()+' '+this._departamento;
+        return this._nombre+' '+this._apellido;
     }
     //Sobreescribir el método de la clase padre (Object)
     toString(){ //Regresa un String
         //Se aplica el polimorfismo que significa = multiples formas en tiempo de ejecución
         //El método que se ejecuta depende si es una referencia de tipo padre o hija
         return this.nombreCompleto();
+    }
+
+    static saludar(){
+        console.log('Saludos desde método static de la clase Empleado');
+    }
+
+    static saludar2(){
+        console.log(empleado.nombre+' '+empleado.apellido);
     }
 }
 
@@ -67,3 +83,9 @@ console.log(empleado1.nombreCompleto())
 console.log(empleado1.toString());
 console.log(persona1.toString());
 
+//persona1.saludar(); no se utiliza desde el objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);
