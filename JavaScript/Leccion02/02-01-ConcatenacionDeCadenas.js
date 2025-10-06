@@ -6,7 +6,7 @@ var nombreCompleto2 = 'Jesus'+' '+'Farina';
 console.log(nombreCompleto2);
 var juntos = nombre + 219; //Lee de izq a der siguiendo la cadena como string
 console.log(juntos);
-juntos = nombre + 78 + 17; //Aquí l
+juntos = nombre + 78 + 17; //Aquí se puede diferenciar a través de los paréntesis
 console.log(juntos)
 juntos = 78 + 17 + nombre;
 console.log(juntos);
@@ -14,10 +14,21 @@ console.log(juntos);
 nombre += apellido; //Tercera Concatenación usando el operador simplificado
 console.log(nombre);
 
-//Hoy no utilizamos var, sino se utiliza let y const
-let nombre2 = "Pedro";
+// Hoy ya no se usa var, se utiliza let y const
+let nombre2 = 'Cristian ';  
 console.log(nombre2);
 
-const apellido2 = "Lepes";
-//apellido 
+const apellido2 = "Farina";
+//apellido2 = "Perez"; una constante no puede ser modificada
 console.log(apellido2);
+
+let x,y; //Se pueden crear varias variables dentro de una misma línea
+x = 17, y = 21; //Se puede hacer asignación de varias variables dentro de la misma línea
+let z = x + y; //Se le asigna el valor de la operación
+console.log(z)
+
+let _1num = 31; //No utilizar números para iniciar el nombre de una variable
+let rompiendo = "rompe"; //No utilizar palabras reservadas para variables
+
+console.log(_1num)
+console.log(rompiendo)
