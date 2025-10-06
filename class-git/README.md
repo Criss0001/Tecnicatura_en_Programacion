@@ -359,15 +359,15 @@ Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo 
 >Profesor Ariel Betancud
 
 # CLASE 6 MIÉRCOLES 14 DE MAYO DEL 2025
-Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
+## Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
 
+```sh
 Ingresamos de la siguiente manera:
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
-```sh
 cd tecnicatura
 
 cd class-git
@@ -479,16 +479,16 @@ cd ..
 cd ..
 ```
 
-La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
-
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 >Revisar y ejecutar cada comando, hacerlo como practica
 >Profesor Ariel Betancud
 
 
-#CLASE 7 MIÉRCOLES 21 DE MAYO DEL 2025 - Portafolio 1
-Git reset vs. Git rm parte 7
-Los comandos git reset y git rm tienen utilidades muy diferentes, pero pueden confundirse fácilmente.
+# CLASE 7 MIÉRCOLES 21 DE MAYO DEL 2025 - Portafolio 1
+## Git reset vs. Git rm parte 7
 ```sh
+Los comandos git reset y git rm tienen utilidades muy diferentes, pero pueden confundirse fácilmente.
+
 GIT RESET
 
 El comando git reset es una herramienta poderosa que te permite deshacer o revertir cambios en tu repositorio de Git. Lo puedes ejecutar de tres maneras diferentes, con las líneas de commando --soft, --mixed y --hard.
@@ -570,17 +570,1044 @@ Siguientes pasos Bueno, todos los cambios están en el área de Staging, incluid
 
 Crear cambios en el archivo creado, donde vamos a hacer varios commits, para ir probando los nuevos comandos, al finalizar las pruebas, eliminar el directorio con todo su contenido.
 ```
-La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
-Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
-
-Dante Nicolás Martinez
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
 >Introducción
 >Práctica
 >PDF
 
 >Revisar y ejecutar cada comando, hacerlo como practica
 >Profesor Ariel Betancud
+
+# CLASE 8 MIÉRCOLES 28 DE MAYO DEL 2025 - Portafolio 2
+## Flujo de trabajo básico con un repositorio remoto parte 8
+
+```sh
+Cuando empiezas a trabajar en un entorno local, el proyecto vive únicamente en tu computadora. Esto significa que no hay forma de que otros miembros del equipo trabajen en él.
+
+Para solucionar esto, utilizamos los servidores remotos: un nuevo estado que deben seguir nuestros archivos para conectarse y trabajar con equipos de cualquier parte del mundo.
+
+Estos servidores remotos pueden estar alojados en GitHub, GitLab, BitBucket, entre otros. Lo que van a hacer es guardar el mismo repositorio que tienes en tu computadora y darnos una URL con la que todos podremos acceder a los archivos del proyecto. Así, el equipo podrá descargarlos, hacer cambios y volverlos a enviar al servidor remoto para que otras personas vean los cambios, comparen sus versiones y creen nuevas propuestas para el proyecto.
+
+Esto significa que debes aprender algunos nuevos comandos
+
+Comandos para trabajo remoto con GIT
+
+git clone url_del_servidor_remoto #Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git
+
+git push #Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+
+git fetch #Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+
+git merge #También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+
+git pull #Básicamente, git fetch y git merge al mismo tiempo.
+
+#Adicionalmente, tenemos otros comandos que nos sirven para trabajar en proyectos muy grandes:
+
+git log --oneline #Te muestra el id commit y el título del commit.
+
+git log --decorate #Te muestra donde se encuentra el head point en el log.
+
+git log --stat #Explica el número de líneas que se cambiaron brevemente.
+
+git log -p #Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+
+git shortlog #Indica que commits ha realizado un usuario, mostrando el usuario y el título de sus commits.
+
+git log --graph --oneline --decorate --all
+
+git log -3 #Limitamos el número de commits.
+
+git log --after=“2018-1-2”
+
+git log --after=“today” 
+
+git log --after=“2018-1-2” --before=“today” #Commits para localizar por fechas.
+
+git log --author=“Name Author” #Commits hechos por autor que cumplan exactamente con el nombre.
+
+git log --grep=“INVIE” #Busca los commits que cumplan tal cual está escrito entre las comillas.
+
+git log --grep=“INVIE” –i #Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+
+git log – index.html #Busca los commits en un archivo en específico.
+
+git log -S “Por contenido” #Buscar los commits con el contenido dentro del archivo.
+
+git log > log.txt #guardar los logs en un archivo txt
+```
+
+
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Parte 2:
+
+
+# CLASE 9-A MIÉRCOLES 4 DE JUNIO DEL 2025 - Portafolio 3
+## Introducción a las ramas o branches de Git parte 9
+
+```sh
+
+Cuando entramos en el proyecto veremos que nos encontramos con la rama master, y es a partir de allí que debe saber que esta es la rama madre o principal rama, y las otras ramas se crean para no afectar a la master
+
+
+Las ramas (branches) son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+
+La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (git reset id-commit, git checkout rama-o-id-commit).
+
+Repasa: ¿Qué es Git?
+
+Cómo funcionan las ramas en GIT
+Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+
+
+git branch nombre-rama #Con este comando se genera una nueva rama.
+
+git checkout nombre-rama #Con este comando puedes saltar de una rama a otra.
+
+git checkout -b rama #Genera una rama y nos mueve a ella automáticamente, Es decir, es la combinación de git branch y git checkout al mismo tiempo.
+
+git reset id-commit #Nos lleva a cualquier commit no importa la rama, ya que identificamos el id del tag., eliminando el historial de los commit posteriores al tag seleccionado.
+
+git checkout rama-o-id-commit #Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
+
+Vamos a hacer una practica: mientras la rama master esta cambiando normalmente, vamos a crear una rama paralela que va a crear nuevas secciones: osea una sección y a esta rama la vamos a llamar segunda(second) y con esto, la vamos a fusionar para ver como queda en la rama master y así entender el flujo de ramas entre git. Al crear otra rama estamos creando una copia de todos los commit que ya tiene la rama master en la nueva rama y todos los cambios que hagamos en esta nueva rama, no los va a ver la rama master, hasta que no la volvamos a fusionar con un proceso que se llama merge.
+
+Abrir terminal #En ubuntu
+
+Abrir como adminstrados git bash #En window
+
+cd Tecnicatura
+
+cd class-git
+
+code . #En ubuntu
+
+code . #En window, abrir como administrador, generar cambios desde VSC
+
+touch index.html #Cargamos un h1 con nuestro nombre
+
+ctrl + s #Guardamos
+
+clic mouse derecho #Abrimos en el navegador con Live Server vemos los cambios
+
+git status
+
+git commit -am "mensaje del commit" #Este solo funciona con archivos creado previamente
+
+git commit -a -m "Mensaje del commit" #Esto es lo mismo que el anterior
+
+git commit -a + enter #Se abrira el entorno para editar el vim con el mensaje
+
+esc + i #Escribir el mensaje
+
+esc
+
+:wq! #esto en window
+
+ctrl + x #Esto en linux
+
+s + enter #No cambiar el nombre ni ruta de ubicación
+
+git log #Veremos los cambios guardados
+
+q #Para salir
+
+git log --stat #Veremos los cambios nombrando cada archivo
+
+q #Para salir
+
+git branch #Muestra en la rama que estamos, desde aquí crearemos una nueva
+
+git show #Muestra el último cambio que hicimos, esto significa que desde el HEAD -> master es que haremos cambios
+
+q #Para salir
+
+ctrl + l #Limpiamos consola
+
+git branch second #creamos una nueva rama llamada second
+
+git show #Nos muestra ahora que esta en el HEAD -> master, cabecera aquí es donde esta apuntando, es decir el último commit esta pegado a dos ramas distintas, aunque todavía estemos en master
+
+q #Para salir
+
+git status #No hay nada para hacer commit
+
+git chekout second #Nos movemos hacía otras ramas, en este caso a second, esto no se ve en mac ni en ubuntu, para ver donde estamos hay que ingresar...
+
+git branch #veremos en que rama estamos ubicados o ingresando...
+
+git status #Veremos en que HEAD estamos apuntando
+
+VSC #hacemos cambios que veremos con Nico
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+
+Dante Nicolás Martinez
+
+Parte 2:
+
+Introducción
+
+Practica
+
+PDF
+
+ctrl + s  #Guardamos la clase del portafolio
+
+F5 #Actualizamos en el navegador para ver los cambios
+
+git status #Veremos el archivo que modificamos
+
+git add .
+
+git commit
+
+esc + i #Abrimos el editor vim, escribimos el mensaje del commit
+
+esc
+
+:wq! #En window
+
+ctrl + x #En linux
+
+s #Para un si 
+
+enter #Terminado el mensaje del commit
+
+git status #No hay mas nada para commitear y estamos en la rama segunda
+
+git show #Vemos todo lo que cambiamos
+
+q #Para salir
+
+git log #Nos muestra donde estabamos con la rama master y el HEAD paso a la rama cabecera
+
+q #Para salir
+
+git checkout master #Volvemos a la rama master, desaparese lo que habíamos hecho
+
+git log #No muestra lo que hicimos en el portafolio
+
+q #Para salir
+
+
+git checkout segunda #Volvemos a ver todos los cambios que hicimos de nuevo
+```
+
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación, todo lo vamos a >recibir en el formulario que pronto estará disponible para completar y enviar todo el trabajo terminado.
+>Profesor Ariel Betancud
+
+# CLASE 9-B MIÉRCOLES 4 DE JUNIO DEL 2025 - Portafolio 4
+## Fusión de ramas con Git merge parte 10
+```sh
+La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
+
+Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
+
+![image](https://github.com/user-attachments/assets/a638ea41-18f0-4fe8-adf6-b2299332401b)
+
+Funcionamiento de Git merge
+
+Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.
+
+¿Cómo unir dos ramas en git?
+
+Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
+
+¿Cómo realizar un merge en git?
+
+Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando git merge seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
+
+
+git checkout master
+
+git merge segunda
+
+
+
+Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como git fetch, git push y git pull, para mantener actualizado tu repositorio.
+
+En este ejemplo, vamos a crear un nuevo commit en la rama master combinando los cambios de una rama llamada segunda: Otra opción es crear un nuevo commit en la rama segunda combinando los cambios de cualquier otra rama:
+
+Git es asombroso porque puede saber cuáles cambios deben conservarse en una rama y cuáles no. En casos de conflictos, asegúrate de guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo.
+
+Comandos básicos de GitHub:
+
+git init # crear un repositorio, si ya esta en la nube traerlo sin hacer git init
+
+git add . #agregar un archivo a staging.
+
+git commit -m “mensaje” #guardar el archivo en git con un mensaje.
+
+git branch nombre_rama #crear una nueva rama.
+
+git checkout nombre_rama #moverse entre ramas.
+
+git push origin rama #mandar cambios a un servidor remoto.
+
+git fetch #traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local.
+
+git merge rama #tiene dos usos. Uno es la fusión de ramas, funcionando como un commit en la rama actual, trayendo la rama indicada. Su otro uso es guardar los cambios de un servidor remoto en nuestro directorio.
+
+git pull origin rama #fetch y merge al mismo tiempo.
+
+git checkout “codigo de version” “nombre del archivo” #volver a la última versión de la que se ha hecho commit.
+
+git reset #vuelve al pasado sin posibilidad de volver al futuro, se debe usar con especificaciones.
+
+git reset --soft #vuelve a la versión en el repositorio, pero guarda los cambios en staging. Así, podemos aplicar actualizaciones a un nuevo commit.
+
+git reset --hard #todo vuelve a su versión anterior
+
+git reset HEAD #saca los cambios de staging, pero no los borra. Es lo opuesto a git add.
+
+git rm #elimina los archivos, pero no su historial. Si queremos recuperar algo, solo hay que regresar. se utiliza así:
+
+git rm --cached #elimina los archivos en staging pero los mantiene en el disco duro.
+
+git rm --force #elimina los archivos de git y del disco duro.
+
+git status #estado de archivos en el repositorio.
+
+git log #historia entera del archivo.
+
+git log --stat #cambios específicos en el archivo a partir de un commit.
+
+git show #cambios históricos y específicos hechos en un archivo.
+
+git diff “codigo de version 1” “codigo de version 2” #comparar cambios entre versiones.
+
+
+git diff #comparar directorio con staging.
+
+
+Comando en producción: TUVE QUE SOLUCIONAR UN CONFLICTO
+
+git status #En rama segunda: hacemos cambios en el archivo y guardamos
+
+git commit -am "Finalizado el cambio en rama segunda" #enter
+
+git status
+
+git checkout master #perdemos todo lo que ya habíamos hecho, hacemos cambios en el archivo agregando un nuevo parrafo y guardamos
+
+git commit -am "Agregado el contenido adicional del archivo y un mejor aporte"
+
+git checkout segunda #vemos como desaparecen los cambios
+
+git checkout master #Aquí es que vamos a hacer el merge
+
+git merge segunda #En mi caso tuve algunos conflictos que solucione a través de VSC, aclaro que nunca debemos utilizar Fusionar los dos cambios
+
+git commit -am "Arreglando conflicto" #Una vez solucionado debemos commitear
+
+git status #Debemos revisar en el navegador y en el código si algo quedo mal y cambiarlo
+
+git commit -am "Solucionado el conflicto 2"
+
+git merge segunda #ahora todo va bien
+
+git commit -am "Volvi a comentar en este caso de mi area laboral" #Añado información al archivo
+
+git log
+
+q #Para salir
+
+git commit -am "Para guardar estos cambios en el README.md"
+
+git checkout segunda
+
+git merge master #Traemos todos los cambios
+
+git commit -am "Cargamos esto ahora" #vamos a master y mergeamos
+
+git checkout master
+
+
+git merge segunda #y terminamos con esto
+
+
+```
+PORTAFOLIO
+
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+
+Dante Nicolás Martinez
+
+Parte 4:
+
+Introducción
+
+Práctica
+
+PDF
+
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación, todo lo vamos a recibir en el formulario que pronto estará disponible para completar y enviar todo el trabajo terminado.
+>Profesor Ariel Betancud
+
+
+# CLASE 10-A MIÉRCOLES 11 DE JUNIO DEL 2025 - Portafolio 5
+## Resolución de conflictos al hacer merge
+
+```sh
+Sección lectura
+
+Git nunca borra nada, a menos que nosotros se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama o creando un nuevo commit, no borrando ramas ni commits (recuerda que puedes borrar commits con git reset y ramas con git branch -d).
+
+Git es muy inteligente y puede resolver algunos conflictos automáticamente: cambios, nuevas líneas, entre otros. Pero algunas veces no sabe cómo resolver estas diferencias, por ejemplo, cuando dos ramas diferentes hacen cambios distintos a una misma línea.
+
+Esto lo conocemos como conflicto y lo podemos resolver manualmente. Solo debemos hacer el merge, ir a nuestro editor de código y elegir si queremos quedarnos con alguna de estas dos versiones o algo diferente. Algunos editores de código como Visual Studio Code nos ayudan a resolver estos conflictos sin necesidad de borrar o escribir líneas de texto, basta con hacer clic en un botón y guardar el archivo.
+
+Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del merge. Si Git puede resolver el conflicto, hará commit automáticamente. Pero, en caso de que no pueda resolverlo, debemos solucionarlo y hacer el commit.
+
+Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged. Solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
+
+Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, debemos usar el siguiente comando:
+
+git merge --abort
+
+Conflictos en repositorios remotos Al trabajar con otras personas, es necesario utilizar un repositorio remoto.
+­
+-Para copiar el repositorio remoto al directorio de trabajo local, se utiliza el comando git clone , y para enviar cambios al repositorio remoto se utiliza git push.
+
+git clone enlace-ssh
+git fetch
+git push origin master
+git merge
+git pull origin master
+git commit -am"Este es un commit rápido"
+git branch #Vemos las ramas creadas y en cual estamos ubicados
+git branch second #Estamos creando una rama nueva llamada second
+git checkout second #Vamos a la rama second saliendo de master
+#Hacemos cambios en el código que estamos trabajando
+ctrl + s #Guardamos los cambios
+git add .
+git commit -m"Cambios en el archivo de trabajo"
+git push origin second
+git checkout master
+git merge second #Mergeamos los cambios a la rama master
+git push origin master
+
+-Para actualizar el repositorio local se hace uso del comando git fetch, luego se debe fusionar los datos traídos con los locales usando git merge.
+
+Para traer los datos y fusionarlos a la vez, en un solo comando, se usa git pull.
+
+­- Para crear commits rápidamente, fusionando git add y git commit -m "", usamos git commit -am "".
+
+­- Para generar nuevas ramas, hay que posicionarse sobre la rama que se desea copiar y utilizar el comando git branch .
+
+- Configuración muy importante para cambiar el nombre por default que recibe la rama principal (master)
+
+git config --global init.defaultBranch main  #A partir de este momento cada repositorio creado recibira el nombre main por default
+
+Para saltar entre ramas, se usa el comando git checkout
+
+­- Una vez realizado los cambios en la rama, estas deben fusionarse con git merge.
+
+El merge ocurre en la rama en la que se está posicionado. Por lo tanto, la rama a fusionar se transforma en la principal.
+
+Los merges también son commits.
+
+Los merges pueden generar conflictos, esto aborta la acción y pide que soluciones el problema manualmente, aceptando o rechazando los cambios que vienen.
+
+Repasa qué es un branch
+
+Sección Práctica
+
+#Hacemos cambios estando en la rama master, en el archivo de trabajo
+
+ctrl  + s
+
+git status
+
+git add .
+
+git commit -m"Aregando cambios nuevos al archivo de trabajo"
+
+git push origin master
+
+git log
+
+q     #Para seguir en la línea decomandos
+
+git checkout second #volvemos a la rama second
+
+git merge master #traemos los cambios desde la master y tenemos las dos ramas actualizadas
+
+git push origin second
+
+Ahora vamos a crear un conflicto para ver como salimos de el, vamos a cargar datos nuevos creando un archivo html estando en la rama second, y también vamos a hacer lo mismo estando en la master y veremos como lo solucionamos.
+
+
+Abrimos el archivo html y lo modificamos estando en la rama second, ctrl + s para guardar
+
+
+Luego commiteamos en la rama second y pasamos a la rama master, hacemos modificaciones también, guardar y commitear, hacer un merge estando en master: pongo en orden los comandos abajo.
+
+ctrl + s #Guardamos los cambios en la rama second, ponemos cambios en el archivo html
+
+git commit -am "Modifique el html y el color del texto" es un ejemplo
+
+git checkout master #Modificamos el html, ponemos código y ponemos texto blue
+
+ctrl + s #Guardamos los cambios
+
+git commit -am "Agregue información, cambie el código y puse todo el texto azul"
+
+git merge second #Hacemos un merge estando en master y veremos el conflicto
+
+
+
+Para solucionar el conflicto podemos abrir el archivo con el editor de texto y modificar lo que nos este señalando y guardamos, esto en el html, lo podemos hacer desde VSC seleccionando: el cambio entrante.
+
+
+Debemos ahora commitear estos cambios, abajo pongo los comandos.
+
+git status
+
+git commit -am "Solución de conflictos al mergear las ramas"
+
+git checkout second #Seguiremos con la versión anterior, porque el merge fue en master
+
+git merge master #Ahora pasamos los cambios a la rama second.
+
+```
+```sh
+PORTAFOLIO
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+
+Dante Nicolás Martinez
+
+Parte 4:
+
+Introducción
+
+Práctica
+
+PDF
+```
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 10-B MIÉRCOLES 11 DE JUNIO DEL 2025 - Portafolio 6
+## Cómo funcionan las llaves públicas y privadas
+
+```sh
+Sección lectura
+
+Las llaves públicas y privadas, conocidas también como cifrado asimétrico de un solo camino, sirven para mandar mensajes privados entre varios nodos con la lógica de que firmas tu mensaje con una llave pública vinculada con una llave privada que puede leer el mensaje.
+
+Las llaves públicas y privadas nos ayudan a cifrar y descifrar nuestros archivos de forma que los podamos compartir sin correr el riesgo de que sean interceptados por personas con malas intenciones.
+
+Cómo funciona un mensaje cifrado con llaves públicas y privadas Ambas personas deben crear su llave pública y privada.
+
+Ambas personas pueden compartir su llave pública a las otras partes (recuerda que esta llave es pública, no hay problema si la “interceptan”).
+
+La persona que quiere compartir un mensaje puede usar la llave pública de la otra persona para cifrar los archivos y asegurarse que solo puedan ser descifrados con la llave privada de la persona con la que queremos compartir el mensaje.
+
+El mensaje está cifrado y puede ser enviado a la otra persona sin problemas en caso de que los archivos sean interceptados.
+
+La persona a la que enviamos el mensaje cifrado puede emplear su llave privada para descifrar el mensaje y ver los archivos.
+
+Nota: puedes compartir tu llave pública, pero nunca tu llave privada.
+```
+
+```sh
+PORTAFOLIO
+
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+
+Dante Nicolás Martinez
+
+Parte 4:
+
+Introducción
+Práctica
+PDF
+```
+
+>La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 01 MIÉRCOLES 13 DE AGOSTO DEL 2025 - Portafolio 1
+
+## USO DE GITHUB
+
+GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos).
+
+Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear organizaciones y proyectos de trabajo, descubrir repositorios de otras personas, contribuir a esos proyectos, dar estrellas y muchas otras cosas.
+
+## COMANDOS
+```sh
+#Import repository, New repository, New organization: significa que es como tu empresa, New project: significa es como un grupo de repositorios que puedes tener dentro de una empresa, New gist: es un pedasito de código que puedes compartir
+
+New repository #Ponemos el nombre: Prueba-Inicio.Repo, descripción: Así armamos un repositorio. Hay muchas licencias para publicar el código: NO lo hacemos ahora.
+
+Create repository #Lo ponemos en privado o en Publico.
+
+El README.md es el archivo que veremos por defecto al entrar a un repositorio. Es una muy buena práctica configurarlo para describir el proyecto, los requerimientos y las instrucciones que debemos seguir para contribuir correctamente.
+
+Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar la URL (por ahora, usando ssh) y ejecutar el comando git clone + la URL que acabamos de copiar. Esto descargará la versión de nuestro proyecto que se encuentra en GitHub.
+
+ATENCIÓN: ¿Por qué? Porque a través de https nos pedirá usuario(nombre perfil) y contraseña. Igual esto ya no funciona de una manera fácil.
+
+Sin embargo, esto solo funciona para las personas que quieren empezar a contribuir en el proyecto.
+
+Cómo conectar un repositorio de GitHub a nuestro documento local, Si queremos conectar el repositorio de GitHub con nuestro repositorio local, aconsejo que al trabajar desde GitHub no utilizemos localmente el comando git init, si debemos ejecutar las siguientes instrucciones:
+
+Teclear aquí para VER el video 1
+
+Vamos a comenzar con la creación de un repositorio en la nube de Github
+
+Recuerden que el primer paso es tener una cuenta en Github
+
+Tener claro el correo con que están allí
+
+hacer la autenticación de dos pasos
+
+esto quiere decir que nuestra cuenta inicia sesión no solo con correo y contraseña
+
+recomiendo tener el sistema de autenticación en varios dispositivos
+
+Otro punto a tener muy en cuenta es que debemos crear nuestra clave pública y privada entre Github y nuestro ordenador
+
+cada ordenador que usemos con la nube debe tener su propia clave
+
+creamos el repositorio
+
+este puede ser público u privado
+
+recomiendo que se coloque el readme
+
+aunque yo no lo puse
+
+se puede agregar un ignore
+
+no se olviden de colocar un nombre al repositorio
+
+copiamos el enlace ssh para traer el repositorio a nuestro ordenador
+
+vemos que está también el https
+
+traemos el ssh
+
+vamos al ordenador para abrir la terminal de git bash
+
+recuerden abrirla como administrador
+
+esto es para tener todos los permisos necesarios y trabajar tranquilos
+
+vamos a ver primero dónde estamos con el comando 
+
+ll
+
+entramos al directorio: Documents
+
+cd Documents
+
+vemos de nuevo dónde estamos
+
+ll
+
+y creamos aquí un nuevo directorio llamado Proyectos
+
+mkdir Proyectos
+
+entramos en el directorio
+
+y vamos a traer el repositorio con el comando
+
+git clone (y el enlace ssh)
+
+vemos con
+
+ll
+
+si está el repositorio dentro del directorio
+
+entramos en él con
+
+cd Prueba-Inicio-Repo
+
+Ya teniendo esto vamos a traer toda actualización desde la nube con el comando
+
+git pull origin main
+
+también podemos usar
+
+git fetch
+
+creamos el archivo readme con el comando
+
+touch README.md
+
+luego vemos si está con el comando
+
+ll
+
+ls
+
+luego
+
+git status
+
+seguimos con el comando
+
+git add .
+
+luego
+
+git status
+
+vamos a commitear
+
+git commit -m"y el mensaje entre comillas dobles"
+
+pasamos todo esto a la nube con
+
+git push origin main
+
+Nos vamos a Github y presionamos F 5 para actualizar y ver si están los cambios
+
+no olvidemos que github es una red social
+
+coloquemos una estrella
+
+está todo hecho
+
+un dato importante
+
+estando en el repositorio de la nube
+
+con solo apretar
+
+punto .
+
+se abre visual studio code
+
+desde aquí vamos a editar el readme
+```
+
+>PORTAFOLIO
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 1:
+>IntroYpractica
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 02 MIÉRCOLES 20 DE AGOSTO DEL 2025 - Portafolio 2
+
+```sh
+Vamos a cargar la llave SSH publica en GitHub
+
+Para copiar la llave publica debes ir al archivo .ssh y allí encontrarás el archivo .pub lo podes abrir con el txt, luego copiar el contenido que esta dentro.
+
+copiar la llave publica #Ir a GitHub, vamos a setting, vamos a SSH and GPG keys
+
+crear una nueva #New SSH key poner nombre y pegar la ssh publica, con esto esta listo.
+
+Aconsejo que la ssh tenga el nombre del ordenador en el que estas trabajando. Esto se debe hacer con cada pc nueva o dispositivo nuevo que tengamos para acceder a nuestra cuenta de GitHub.
+
+git branch #Vemos en que rama estamos
+
+git checkout master #Ponernos en la rama master
+
+git branch -M main #Cambiamos el nombre a la rama master
+
+git remote add origin git@github.com:nombreUsuario/class-git.git #Agregamos el repositorio remoto, este es un ejemplo
+
+git remote -v #Vemos si ya esta conectado
+
+git merge segunda #Mergeamos lo que tenemos en la rama segunda en main
+
+git commit -am "Uso de GitHub parte 20" #Hacemos el commit de hoy
+
+git push origin main #Pasamos todo lo hecho a GitHub, revisar en el repositorio en GitHub.
+
+Frente al cambio de nombre de rama master a main, suele suceder que en el repo de GitHub se hayan creado dos ramas, la rama master y la rama main, se debe ir al repo, settings y ahí se puede cambiar la rama principal, en vez de que siga siendo master, que sea la rama main, luego de eso ya podemos borrar la rama master.
+
+````
+>PORTAFOLIO
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 2:
+>Video Capitulo 01
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 03 MIÉRCOLES 27 DE AGOSTO DEL 2025 - Portafolio 3
+
+## Cambios en GitHub: de master a main
+```sh
+El escritor Argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. Feo no es lo mismo que desagradable, ni aromático es lo mismo que oloroso.
+
+
+Por lo anterior, podemos afirmar que los sinónimos no expresan lo mismo, no tienen el mismo “color” ni el mismo “peso”.
+
+Sí, esta lectura es parte de la enseñanza profesional de Git & GitHub.
+
+Desde el 1 de octubre de 2020 GitHub cambió el nombre de la rama principal: ya no es “master” -como aprenderás aquí- sino main.
+
+Este derivado de una profunda reflexión ocasionada por el movimiento #BlackLivesMatter.
+
+La industria de la tecnología lleva muchos años usando términos como master, slave, blacklist o whitelist y esperamos pronto puedan ir desapareciendo.
+
+Y sí, las palabras importan.
+
+Por lo que de aquí en adelante cada vez que me escuches mencionar “master” debes saber que hago referencia a “main”.
+
+¿Cuando es que sigue siendo master y cuando sigue siendo main?
+Cuando se crea un repositorio desde git bash en nuestro ordenador a través de git init, sigue siendo el estandar como master. ¿Qué hacer con esto? Debes cambiar el nombre de la rama master a main con el comando:
+
+ git branch -M main
+
+O cambiando la asignación por default con este otro comando:
+
+git config --global init.defaultBranch main
+
+A partir de este comando siempre que ingreses git init será la rama main.
+
+Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás que la rama principal tiene por default el nombre de main y al clonar a nuestro ordenador seguira teniendo este nombre y no será necesario ningun cambio.
+
+Otro comando que deben saber es:
+
+gitk
+
+Si no te funciona el comando gitk es posible no lo tengas instalado por defecto.
+
+Para instalar gitk debemos ejecutar los siguientes comandos:
+
+sudo apt-get update
+
+sudo apt-get install gitk
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git utilizando el comando gitk. Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.
+```
+
+>PORTAFOLIO
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 3:
+>Video Capitulo 02
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+# CLASE 04 MIÉRCOLES 3 DE SEPTIEMBRE DEL 2025 - Portafolio 4
+
+```sh
+Tu primer push
+La creación de las SSH es necesario solo una vez por cada computadora. Aquí conocerás cómo conectar a GitHub usando SSH.
+
+
+Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
+
+Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.
+
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+
+ssh
+
+git remote set-url origin url-ssh-del-repositorio-en-github
+
+Comandos para copiar la llave SSH:
+
+ESTAS SON LAS RUTAS DEL SSH PUBLICO
+-Mac:
+pbcopy < ~/.ssh/id_rsa.pub
+
+Windows (Git Bash):
+
+clip < ~/.ssh/id_rsa.pub
+
+Linux (Ubuntu):
+
+cat ~/.ssh/id_rsa.pub
+
+Importante
+
+Las buenas costumbres nos enseñan que antes de hacer un push, siempre debemos hacer un pull, un fetch, esto para que si alguien ya hizo algún cambio, no se genere un conflicto.
+
+Invitar a un colaborador
+
+Para invitar a un colaborador debemos ir a GitHub y seleccionar:
+setting -> colaborators -> ingresar contraseña o un F2A de verificación y enviar la invitación escribiendo el nombre de usuario.
+Del otro lado el usuario invitado solo debe aceptar y listo, ya puede participar del proyecto haciendo commit.
+
+```
+
+PORTAFOLIO
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+Dante Nicolás Martinez
+>Segundo Semestre Parte 4:
+>Video Capitulo 03
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 04 MIÉRCOLES 3 DE SEPTIEMBRE DEL 2025 - Portafolio 4
+
+## Tu primer push
+```sh
+
+La creación de las SSH es necesario solo una vez por cada computadora. Aquí conocerás cómo conectar a GitHub usando SSH.
+
+Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
+
+Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.
+
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+
+ssh
+
+git remote set-url origin url-ssh-del-repositorio-en-github
+
+Comandos para copiar la llave SSH:
+
+ESTAS SON LAS RUTAS DEL SSH PUBLICO
+-Mac:
+pbcopy < ~/.ssh/id_rsa.pub
+
+Windows (Git Bash):
+
+clip < ~/.ssh/id_rsa.pub
+
+Linux (Ubuntu):
+
+cat ~/.ssh/id_rsa.pub
+
+Importante
+
+Las buenas costumbres nos enseñan que antes de hacer un push, siempre debemos hacer un pull, un fetch, esto para que si alguien ya hizo algún cambio, no se genere un conflicto.
+
+Invitar a un colaborador
+
+Para invitar a un colaborador debemos ir a GitHub y seleccionar:
+setting -> colaborators -> ingresar contraseña o un F2A de verificación y enviar la invitación escribiendo el nombre de usuario.
+
+
+Del otro lado el usuario invitado solo debe aceptar y listo, ya puede participar del proyecto haciendo commit.
+```
+PORTAFOLIO
+
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 4:
+>Video Capitulo 03
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 05 MIÉRCOLES 10 DE SEPTIEMBRE DEL 2025 - Portafolio 5
+
+## Git tag y versiones en GitHub
+
+En Git, las etiquetas o Git tags tienen un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando git tag, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas, es esencial para un flujo de trabajo eficiente.
+
+
+Creación de etiquetas en Git
+
+```sh
+git tag
+```
+
+Sustituye con un identificador semántico que refleje el estado del repositorio en el momento de la creación. Git admite etiquetas anotadas y ligeras.
+
+```sh
+Listado de etiquetas
+Para obtener una lista de etiquetas en el repositorio, ejecuta el siguiente comando:
+<img width="638" height="479" alt="image" src="https://github.com/user-attachments/assets/7d6e9bbb-a064-4eb8-a16a-63d6dd2cdc8a" />
+
+
+Para crear una etiqueta, ejecuta el siguiente comando:
+
+Las etiquetas anotadas almacenan información adicional como la fecha, etiquetador y correo electrónico, y son ideales para publicaciones públicas. Las etiquetas ligeras son más simples y se emplean como “marcadores” de una confirmación específica.
+
+git tag
+
+Esto mostrará una lista de las etiquetas existentes, como:
+
+v1.0
+
+v1.1
+
+v1.2
+
+Para perfeccionar la lista, puedes utilizar opciones adicionales, como -l con una expresión comodín.
+
+Uso compartido de etiquetas
+
+Compartir etiquetas requiere un enfoque explícito al usar el comando git push. Por defecto, las etiquetas no se envían automáticamente. Para enviar etiquetas específicas, utiliza:
+
+git push origin
+
+Para enviar varias etiquetas a la vez, usa:
+
+git push origin --tags
+
+Eliminación de etiquetas
+Para eliminar una etiqueta, usa el siguiente comando:
+
+git tag -d
+
+Esto eliminará la etiqueta identificada por en el repositorio local.
+
+En resumen, las etiquetas en Git son esenciales para asignar versiones y capturar instantáneas importantes en el historial de un proyecto. Aprender a crear, listar, compartir y eliminar etiquetas mejorará tu flujo de trabajo con Git.
+```
+
+
+PORTAFOLIO
+
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 5:
+>Video Capitulo 04
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+# CLASE 06-B MIÉRCOLES 24 DE SEPTIEMBRE DEL 2025 - Portafolio 7
+
+## Error con los tags
+
+Investigación: Si un tag es imposible generarlo dos veces ¿Cómo es que existe el error de dos tags con el mismo nombre?
+
+¿Cómo se origina este problema o error?
+
+La respuesta debe ser enviada antes de las 23 horas por cada grupo, deben enviar comandos y todo los pasos que harían frente a este conflicto.
+
+PORTAFOLIO
+
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 6:
+>Video Capitulo 06
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+
 
 
 
