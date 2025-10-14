@@ -3,7 +3,7 @@ package dominio;
 
 public class Encapsulamiento_Parte_1_7_6 {
     //Atributos
-    private String nombre;
+    String nombre;
     private double sueldo;
     private boolean eliminado;
     
@@ -12,6 +12,14 @@ public class Encapsulamiento_Parte_1_7_6 {
         this.nombre = nombre;
         this.sueldo = sueldo;
         this.eliminado = eliminado;
+    }
+
+    public Encapsulamiento_Parte_1_7_6(String osvaldo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Encapsulamiento_Parte_1_7_6() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getNombre() {
@@ -38,5 +46,9 @@ public class Encapsulamiento_Parte_1_7_6 {
         this.eliminado = eliminado;
     }
     
-    
+    public String toString(){ //Convierte en una cadena atributo
+        return "Persona [ nombre: "+this.nombre+ 
+                ", sueldo: "+this.sueldo+
+                ", éliminado: "+this.eliminado+" ]";
+    }
 }
