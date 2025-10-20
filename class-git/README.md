@@ -1659,6 +1659,515 @@ Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local 
 
 
 
+# CLASE 09 MIÉRCOLES 8 DE OCTUBRE DEL 2025 - Portafolio 9
 
 
 
+
+
+
+Configurar múltiples colaboradores en un repositorio de GitHub
+
+Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas. Esto quiere decir que pueden copiar tu proyecto pero no colaborar con él, si este es publico, de otra manera, osea, si es privado es necesario que realmente estes haciendo una invitación, sino no lo van a poder ver. Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.
+
+
+Cómo agregar colaboradores en Github
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto. Se encuentra en:
+
+Repositorio > Settings > Collaborators
+Ahí, debemos añadir el email o username de los nuevos colaboradores.
+
+
+<img width="1302" height="672" alt="image" src="https://github.com/user-attachments/assets/8edad9fb-bdde-4b78-b7bd-6dc56886c68e" />
+
+
+
+```sh
+Si, como colaborador, agregaste erróneamente el mensaje del commit, lo puedes cambiar de la siguiente manera:
+
+Hacer un commit con el nuevo mensaje que queremos, esto nos abre el editor de texto de la terminal:
+
+git commit —amend #Corregimos el mensaje
+git pull origin main #Traer el repositorio remoto
+git push --set-upstream origin main #Ejecutar el cambio, el error arreglado
+
+Comienzo del colaborador
+cd Documentos #Abre git bash
+mkdir class-git #Crea la carpeta o directorio de trabajo
+ls -al #Revisa lo que va haciendo, los archivos o directorios que tiene
+# 1. No debe hacer un git init, debe buscar el repositorio en el cual esta invitado a participar, por supuesto en GitHub.
+# 2. Pasa a clonar desde HTTPS, copiar la url, esto es porque no se arranca el proyecto desde cero, se esta uniendo otro colaborador.
+# 3. En git bash ponemos el siguiente comando.
+git clone url-copiada-github #Esto hace que clonemos el repositorio
+# 4. No pide ni usuario ni contraseña si el repositorio es publico.
+code . #Abre VSC y comienza con cambios, o abre el siguiente comando para hacer modificaciones
+vim historia.txt #Vamos a escribir: Aquí esta un nuevo colaborador
+vim escribimos el mensaje del commit #Esto en Ubuntu
+ctrl + x
+s #Para un si 
+enter #Terminado el mensaje del commit
+vim escribimos el mensaje del commit #Esto en git bash window
+esc #Presionamos escaner luego de terminar de escribir
+:wq! #Para salir del editor vim en window
+git status
+git commit -am "Mi primer commit, estoy muy emocionado!!!"
+git pull origin main
+git fetch
+gti branch #Para ver las ramas que se trajo, no se trae sino solo main, si hay mas debes crearlas local
+git log #Para ver toda las historia
+git log --graph #Vemos el grafico de las diferentes ramas y del commit que acabamos de hacer que esta en el main, Git es una base de datos de toda las historia de todo lo que se ha hecho
+git push origin main #Va a pedir un email que será el del colaborador, su contraseña.
+# 5. Nos trae un denegado, ¿Por qué? Porque en el proceso de abordaje el jefe no le dio acceso: el dueño del repositorio no le agregó dandole acceso.
+# 6. Ir a settings del repositorio, veremos la opsión Collaborators, agregamos el correo o nombre de usuario: el colaborador debe tener un email publico y visible o de otra manera debera ser con el nombre de usuario publico: ingresar el username y debe ir como colaborador.
+# 7. Se puede enviar un email con la url, pero ya GitHub envia una notificación al usuario de invitado, es una cosa que debemos empezar a consultar y revisar.
+# 8. El colaborador debe aceptar la invitación, una vez hecho eso ya tendrá total acceso para hacer push al repositorio.
+git pull origin main
+git push origin main #Colocar nombre de usuario y contraseña, listo
+# 9. El dueño del repositorio no ve los cambios, ¿Qué hacer?
+git pull origin main
+git fetch
+git log --stat #Se verá claro que el colaborador ingreso su primer commit
+# 10. A partir de ahora el dueño del repositorio y el colaborador deberán repartir el trabajo, esto se hace con distintas ramas de trabajo: el dueño trabajará desde la rama header y el colaborador desde la rama footer, al final cuando se termine, se hara un merge para terminar el proyecto.
+```
+
+PORTAFOLIO
+
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 8:
+>Video Capitulo 08
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo req>uerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+
+# CLASE 10 MIÉRCOLES 15 DE OCTUBRE DEL 2025 - Portafolio 10
+
+Flujo de trabajo profesional
+
+Haciendo merge de ramas de desarrollo a main
+
+
+Para poder desarrollar software de manera óptima y ordenada, necesitamos tener un flujo de trabajo profesional, que nos permita trabajar en conjunto sin interrumpir el trabajo de otros desarrolladores.
+
+Una buena práctica de flujo de trabajo sería la siguiente:
+```sh
+Crear ramas
+Asignar una rama a cada programador
+El programador baja el repositorio con git pull origin master
+El programador cambia de rama
+El programador trabaja en esa rama y hace commits
+El programador sube su trabajo con git push origin #nombre_rama
+El encargado de organizar el proyecto baja, revisa y unifica todos los cambios
+```
+PORTAFOLIO
+
+>Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+>Dante Nicolás Martinez
+>Segundo Semestre Parte 8:
+>Video Capitulo 9
+>PDF
+>Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+>Profesor Ariel Betancud
+
+# Clase 11 Cosas importantes en JavaScript -> Tarea
+Requisitos de finalización
+Abrió: lunes, 20 de octubre de 2025, 18:00
+Cierra: miércoles, 8 de diciembre de 2032, 12:29
+¿Cómo creamos funciones en JavaScript de manera descriptiva?
+
+Tenemos que tener presente que utilizamos el tipo de escritura Camel case y sus identificadores normalemente los vamos a encontrar en ingles, veamos varios ejemplos:
+
+Estas funciones tienen que ver con la manipulación de datos
+
+calculateTotalPrice()
+
+formatUserInput()
+
+validateEmailAddress()
+
+convertToCamelCase()
+
+filterActiveUsers()
+
+
+
+Eventos o Interacción
+
+handleButtonClick()
+
+onFormSubmit()
+
+toggleDarkMode()
+
+updateProgressBar()
+
+
+initializeApp()
+
+
+
+Operaciones CRUD
+
+createNewUser()
+
+fetchUserData()
+
+updateUserProfile()
+
+
+deleteUserAccount()
+
+
+
+Utilidades
+
+generateRandomId()
+
+formatCurrency()
+
+debounceSearch()
+
+sanitizeInput()
+
+
+checkPermissions()
+
+
+
+Veamos un ejemplo en código:
+
+// En lugar de:
+
+function abc() { }
+
+
+
+// Mejor:
+
+function calculateMonthlyRevenue() {
+
+    // código aquí
+
+}
+
+
+
+function validateUserCredentials() {
+
+    // código aquí
+
+
+}
+
+
+
+Otro ejemplo es una función para sumar todo lo que recibe:
+
+// Más específica o más utilizada
+
+calculateTotalSum()
+
+
+
+// Clara y directa
+
+sumAllInputs()
+
+
+
+// Concisa pero descriptiva
+
+computeTotal()
+
+
+
+// Alternativas excelentes
+
+calculateSum()
+
+getTotalAmount()
+
+
+sumAllValues()
+
+
+Implementando los ejemplos:
+
+function calculateTotalSum(...inputs) {
+
+    return inputs.reduce((total, current) => total + current, 0);
+
+}
+
+
+// Uso:
+
+console.log(calculateTotalSum(1, 2, 3, 4)); // 10
+
+
+console.log(calculateTotalSum(10, 20)); // 30
+
+
+
+Aunque todavía no vamos a avanzar en funciones flechas y otras cosas más avanzadas, ya que lo veremos más adelante, es importante comenzar a tener en cuenta esta forma productiva de trabajar a la hora de programar en JavaScript.
+
+A la hora de trabajar tenemos que tener en cuenta los siguientes items para un identificador de función, en este ejemplo sería una función para sumar todo lo que recibe:
+
+
+✅ Es muy descriptiva
+
+✅ Indica que hace un cálculo
+
+✅ Específica que es una suma
+
+✅ Suena natural en inglés
+
+✅ Fácil de entender para otros desarrolladores
+
+
+Tarea:
+Así como yo aclare 5 puntos importantes de la función para sumar, deben mostrar el significado al español de las diferentes funciones y sus puntos importantes para saber que hacen, de los temas que están más arriba:
+funciones tienen que ver con la manipulación de datos
+Eventos o Interacción
+Operaciones CRUD
+Utilidades
+Espero me lo envien antes de las 23 horas para obtener la mejor nota, debe estar en un README.md en el repositorio de Github, y es el enlace que me deben enviar al correo institucional. Se aprueba con 7, si esta enviado despues de las 23 horas y por supuesto si esta bien resuelto.
+Profesor Ariel Betancud
+
+## TAREA
+
+```sh
+1. Funciones relacionadas con la manipulación de datos
+🔹 calculateTotalPrice()
+
+Significado:
+Calcula el precio total de una compra o conjunto de productos.
+Puntos importantes:
+
+Suma los precios individuales de los artículos.
+
+Puede incluir impuestos o descuentos.
+
+Se usa en sistemas de ventas, carritos de compra o facturación.
+
+🔹 formatUserInput()
+
+Significado:
+Da formato correcto a la información que el usuario escribe (por ejemplo, mayúsculas, espacios o signos).
+Puntos importantes:
+
+Asegura que los datos ingresados tengan un formato uniforme.
+
+Facilita validaciones y búsquedas posteriores.
+
+Evita errores por diferencias de formato.
+
+🔹 validateEmailAddress()
+
+Significado:
+Comprueba si una dirección de correo electrónico tiene el formato correcto.
+Puntos importantes:
+
+Revisa la presencia del “@” y un dominio válido.
+
+Evita registros o envíos con correos inválidos.
+
+Mejora la calidad de los datos guardados.
+
+🔹 convertToCamelCase()
+
+Significado:
+Convierte un texto o nombre de variable a formato “camelCase” (ejemplo: “nombreCompletoUsuario”).
+Puntos importantes:
+
+Se usa para mantener estilo uniforme en el código.
+
+Facilita la lectura del código.
+
+Muy común en JavaScript y otros lenguajes.
+
+🔹 filterActiveUsers()
+
+Significado:
+Filtra una lista de usuarios para mostrar solo los que están activos.
+Puntos importantes:
+
+Separa datos según una condición (por ejemplo, “activo = verdadero”).
+
+Aumenta la eficiencia al trabajar solo con datos relevantes.
+
+Se usa mucho en paneles de administración o bases de datos.
+
+🖱️ 2. Funciones de Eventos o Interacción
+🔹 handleButtonClick()
+
+Significado:
+Ejecuta una acción cuando el usuario hace clic en un botón.
+Puntos importantes:
+
+Permite responder a interacciones del usuario.
+
+Puede mostrar mensajes, enviar formularios o cambiar vistas.
+
+Es una función común en interfaces gráficas o sitios web.
+
+🔹 onFormSubmit()
+
+Significado:
+Se activa cuando el usuario envía un formulario.
+Puntos importantes:
+
+Valida la información antes de enviarla.
+
+Evita errores o envíos incompletos.
+
+Puede enviar los datos a un servidor o base de datos.
+
+🔹 toggleDarkMode()
+
+Significado:
+Activa o desactiva el “modo oscuro” de una aplicación.
+Puntos importantes:
+
+Cambia los colores de la interfaz (fondo oscuro, texto claro).
+
+Mejora la accesibilidad y comodidad visual.
+
+Se guarda la preferencia del usuario para futuras visitas.
+
+🔹 updateProgressBar()
+
+Significado:
+Actualiza una barra de progreso según el avance de una tarea.
+Puntos importantes:
+
+Da retroalimentación visual al usuario.
+
+Muestra el porcentaje completado de un proceso.
+
+Muy usada en cargas de archivos o formularios largos.
+
+🔹 initializeApp()
+
+Significado:
+Inicia o prepara una aplicación para su uso.
+Puntos importantes:
+
+Carga configuraciones iniciales, variables y datos necesarios.
+
+Se ejecuta al arrancar la aplicación.
+
+Garantiza que todo esté listo antes de la interacción del usuario.
+
+💾 3. Funciones de Operaciones CRUD
+🔹 createNewUser()
+
+Significado:
+Crea un nuevo registro de usuario en el sistema.
+Puntos importantes:
+
+C corresponde a “Create” del CRUD.
+
+Guarda la información básica del usuario.
+
+Puede generar un ID único o una contraseña inicial.
+
+🔹 fetchUserData()
+
+Significado:
+Obtiene (lee) los datos de un usuario desde una base de datos o servidor.
+Puntos importantes:
+
+R corresponde a “Read” del CRUD.
+
+Se usa para mostrar información en pantalla.
+
+No modifica los datos, solo los consulta.
+
+🔹 updateUserProfile()
+
+Significado:
+Actualiza la información del perfil de un usuario existente.
+Puntos importantes:
+
+U corresponde a “Update” del CRUD.
+
+Permite cambiar nombre, correo, contraseña, etc.
+
+Se asegura de mantener la información actualizada y segura.
+
+🔹 deleteUserAccount()
+
+Significado:
+Elimina un registro de usuario del sistema.
+Puntos importantes:
+
+D corresponde a “Delete” del CRUD.
+
+Puede ser una eliminación permanente o temporal (desactivación).
+
+Se usa con precaución porque borra datos importantes.
+
+⚙️ 4. Funciones de Utilidades
+🔹 generateRandomId()
+
+Significado:
+Genera un identificador único y aleatorio para objetos, usuarios o registros.
+Puntos importantes:
+
+Evita duplicaciones de datos.
+
+Se usa para crear claves o referencias únicas.
+
+Común en bases de datos y sistemas distribuidos.
+
+🔹 formatCurrency()
+
+Significado:
+Da formato correcto a un número como moneda (por ejemplo, $1.500,00).
+Puntos importantes:
+
+Añade símbolos monetarios y separadores de miles.
+
+Mejora la presentación visual de valores numéricos.
+
+Se adapta según el país o la región.
+
+🔹 debounceSearch()
+
+Significado:
+Controla el tiempo entre búsquedas para no ejecutar demasiadas a la vez.
+Puntos importantes:
+
+Mejora el rendimiento del sistema.
+
+Evita búsquedas innecesarias cuando el usuario sigue escribiendo.
+
+Muy usada en cuadros de búsqueda o autocompletado.
+
+🔹 sanitizeInput()
+
+Significado:
+Limpia la entrada de datos para eliminar caracteres peligrosos o no válidos.
+Puntos importantes:
+
+Protege contra ataques o errores de seguridad.
+
+Evita que se ejecuten códigos maliciosos.
+
+Fundamental para aplicaciones web y bases de datos.
+
+🔹 checkPermissions()
+
+Significado:
+Verifica si un usuario tiene los permisos necesarios para realizar una acción.
+Puntos importantes:
+
+Aumenta la seguridad del sistema.
+
+Evita accesos no autorizados.
+
+Se usa antes de ejecutar funciones críticas (como eliminar o modificar datos).
+
+```
