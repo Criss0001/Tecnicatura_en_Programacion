@@ -1,5 +1,5 @@
 from Creamos_la_clase_hija_Cuadrado_12_3 import Cuadrado
-from Solucion_Tarea1_y_Tarea2_Creación_de_la_clase_Rectángulo_12_8 import Rectangulo
+from Leccion_10.Solucion_Tarea1_y_Tarea2_Creación_de_la_clase_Rectángulo_13_1 import Rectangulo
 
 cuadrado1 = Cuadrado(5, 'Azul')
 print(cuadrado1.ancho)
