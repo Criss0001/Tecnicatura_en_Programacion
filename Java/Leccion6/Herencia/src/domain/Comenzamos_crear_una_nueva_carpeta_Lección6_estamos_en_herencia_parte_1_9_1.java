@@ -60,8 +60,16 @@ public class Comenzamos_crear_una_nueva_carpeta_Lección6_estamos_en_herencia_pa
 
     @Override
     public String toString() {
-        return "Comenzamos_crear_una_nueva_carpeta_Lecci\u00f3n6_estamos_en_herencia_parte_1_9_1{" + "nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Comenzamos_crear_una_nueva_carpeta_Lecci\u00f3n6_estamos_en_herencia_parte_1_9_1{nombre=").append(nombre);
+        sb.append(", genero=").append(genero);
+        sb.append(", edad=").append(edad);
+        sb.append(", direccion=").append(direccion);
+        sb.append(", ").append(super.toString());
+        sb.append('}');
+        return sb.toString();
     }
+
 
     
     
