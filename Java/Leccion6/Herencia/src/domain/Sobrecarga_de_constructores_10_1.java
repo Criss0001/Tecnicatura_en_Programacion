@@ -1,16 +1,20 @@
 
 package domain;
 
-public class Herencia_parte_3_clase_String_Builder_9_3 extends Comenzamos_crear_una_nueva_carpeta_Lección6_estamos_en_herencia_parte_1_9_1 {
+public class Sobrecarga_de_constructores_10_1 extends Comenzamos_crear_una_nueva_carpeta_Lección6_estamos_en_herencia_parte_1_9_1 {
     private int idEmpleado;
     private double sueldo;
-    static int contadorEmpleados; //Es para incrementar
+    private static int contadorEmpleados; //Es para incrementar
     
     //Cosntructor
-
-    public Herencia_parte_3_clase_String_Builder_9_3(String nombre, double sueldo) {
-        super(nombre);
+    public Sobrecarga_de_constructores_10_1(){
         this.idEmpleado = ++Herencia_parte_3_clase_String_Builder_9_3.contadorEmpleados;
+    }
+
+    public Sobrecarga_de_constructores_10_1(String nombre, double sueldo) {
+        //super(nombre);
+        this(); //Estamos llamando desde aqui al constructor vacio(llamar a un constructor interno)
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
@@ -38,5 +42,3 @@ public class Herencia_parte_3_clase_String_Builder_9_3 extends Comenzamos_crear_
     
     
 }
-
-

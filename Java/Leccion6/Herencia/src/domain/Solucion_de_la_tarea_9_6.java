@@ -9,9 +9,9 @@ public class Solucion_de_la_tarea_9_6 extends Comenzamos_crear_una_nueva_carpeta
     private int idCliente;
     private Date fechaRegistro; //importar la clase Date
     private boolean vip; //Very important person
-    private static int contadorCliente; //Tipo estatico
+    static int contadorCliente; //Tipo estatico
     
-    //Constructos
+    //Constructores
     public Solucion_de_la_tarea_9_6(Date fechaRegistro, boolean vip, String nombre,
             char genero, int edad, String direccion){
         super(nombre, genero, edad, direccion);
